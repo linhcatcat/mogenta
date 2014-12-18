@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Likipe_Utility>
+            <version>1.0.0</version>
+        </Likipe_Utility>
+    </modules>
+    <frontend>
+        <routers>
+            <likipe_utility>
+                <use>standard</use>
+                <args>
+                    <module>Likipe_Utility</module>
+                    <frontName>utility</frontName>
+                </args>
+            </likipe_utility>
+        </routers>
+    </frontend>
+</config>
