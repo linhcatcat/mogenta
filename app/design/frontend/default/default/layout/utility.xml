@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+    <utility_index_index>
+        <reference name="content">
+            <block type="utility/myblock"  name="afficher_monblock" template="utility/afficher.phtml" />
+        </reference>
+    </utility_index_index>
+</layout>
