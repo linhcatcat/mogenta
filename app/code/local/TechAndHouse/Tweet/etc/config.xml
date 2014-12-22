@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TechAndHouse_Tweet>
+          <version>0.1.0</version>
+        </TechAndHouse_Tweet>
+    </modules>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <techandhouse>
+                                            <title>Tech And House Module</title>
+                                        </techandhouse>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+      <resources>
+ 
+        <tweet_setup>
+          <setup>
+            <module>TechAndHouse_Tweet</module>
+          </setup>
+          <connection>
+            <use>core_setup</use>
+          </connection>
+        </tweet_setup>
+ 
+        <tweet_write>
+          <connection>
+            <use>core_write</use>
+          </connection>
+        </tweet_write>
+ 
+        <tweet_read>
+          <connection>
+            <use>core_read</use>
+          </connection>
+        </tweet_read>
+ 
+      </resources>
+    </global>
+</config>

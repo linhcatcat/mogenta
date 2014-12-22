@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magestore
+ * 
+ * Online Magento Course
+ * 
+ */
+-->
+<layout version="0.1.0">
+    <lesson06admin_adminhtml_lesson06_index>
+        <reference name="content">
+            <block type="lesson06/adminhtml_lesson06" name="lesson06" />
+        </reference>
+    </lesson06admin_adminhtml_lesson06_index>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <websgle_helloworld>
+            <version>0.1.0</version>
+        </websgle_helloworld>
+    </modules>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Websgle_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+    </frontend>
+</config>

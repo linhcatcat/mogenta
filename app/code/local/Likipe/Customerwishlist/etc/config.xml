@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Likipe_Customerwishlist>
+            <version>0.1.0</version>
+        </Likipe_Customerwishlist>
+    </modules>
+	
+    <frontend>  <!--[1]-->
+        <routers>
+            <wishlist>  <!--[2]-->
+                <args>
+                    <modules>
+                        <Likipe_Customerwishlist before="Mage_Wishlist">Likipe_Customerwishlist</Likipe_Customerwishlist>  <!--[3]-->
+                    </modules>
+                </args>
+            </wishlist>
+        </routers>
+    </frontend>
+</config>	

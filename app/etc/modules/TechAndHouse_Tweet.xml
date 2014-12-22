@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TechAndHouse_Tweet>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TechAndHouse_Tweet>
+    </modules>
+</config>

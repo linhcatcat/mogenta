@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magestore
+ * 
+ * Online Magento Course
+ * 
+ */
+-->
+<config>
+	<menu>
+		<lesson06 module="lesson06" translate="title">
+			<title>Lesson06 Menu</title>
+			<sort_order>71</sort_order>
+			<children>
+				<lesson06 module="lesson06" translate="title">
+					<title>Custome Menu 1</title>
+					<sort_order>0</sort_order>
+					<action>lesson06admin/adminhtml_lesson06</action>
+				</lesson06>
+				<lesson06b module="lesson06" translate="title">
+					<title>Custome Menu 2</title>
+					<sort_order>2</sort_order>
+					<action>lesson06admin/adminhtml_lesson06/menu2</action>
+				</lesson06b>
+				<lesson06c module="lesson06" translate="title">
+					<title>Custome Menu 3</title>
+					<sort_order>3</sort_order>
+					<action>lesson06admin/adminhtml_lesson06/menu3</action>
+				</lesson06c>
+				<settings module="lesson06" translate="title">
+					<title>Settings</title>
+					<sort_order>1000</sort_order>
+					<action>adminhtml/system_config/edit/section/lesson06</action>
+				</settings>
+			</children>
+		</lesson06>
+	</menu>
+	<acl>
+		<resources>
+			<all>
+				<title>Allow Everything</title>
+			</all>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<lesson06 module="lesson06" translate="title">
+										<title>Lesson06</title>
+										<sort_order>71</sort_order>
+									</lesson06>
+								</children>
+							</config>
+						</children>
+					</system>
+					<lesson06 module="lesson06" translate="title">
+						<title>Lesson06</title>
+						<sort_order>71</sort_order>
+						<children>
+							<lesson06 module="lesson06" translate="title">
+								<title>Manage Items</title>
+								<sort_order>0</sort_order>
+							</lesson06>
+							<lesson06c module="lesson06" translate="title">
+								<title>Custome Menu 3</title>
+								<sort_order>3</sort_order>
+								<action>lesson06admin/adminhtml_lesson06_menu3</action>
+							</lesson06c>
+							<settings module="lesson06" translate="title">
+								<title>Settings</title>
+								<sort_order>1000</sort_order>
+							</settings>
+						</children>
+					</lesson06>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

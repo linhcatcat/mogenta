@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magestore
+ * 
+ * Online Magento Course
+ * 
+ */
+-->
+<config>
+    <modules>
+        <Magestore_Lesson06>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magestore_Lesson06>
+    </modules>
+</config>

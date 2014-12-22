@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<demoadmin_adminhtml_demo_index>
+		<reference name="content">
+			<block type="demo/adminhtml_demo" name="demo" />
+		</reference>
+	</demoadmin_adminhtml_demo_index>
+</layout>
