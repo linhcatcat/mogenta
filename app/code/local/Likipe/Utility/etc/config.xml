@@ -23,6 +23,38 @@
             </updates>
         </layout>
     </frontend>
+    <admin>
+        <routers>
+            <utility>
+                <use>admin</use>
+                <args>
+                    <module>Likipe_Utility</module>
+                    <frontName>adminutility</frontName>
+                </args>
+            </utility>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <utility>
+                    <file>utility.xml</file>
+                </utility>
+            </updates>
+        </layout>
+        <menu>
+            <utility translate="title" module="adminhtml">
+               <title>My plugins</title>
+               <sort_order>100</sort_order>
+               <children>
+                    <set_time>
+                        <title>Adress book</title>
+                        <action>adminutility/adminhtml_index</action>
+                    </set_time>
+                </children>
+            </utility>
+        </menu>
+    </adminhtml>
     <global>
         <models>
             <utility>
