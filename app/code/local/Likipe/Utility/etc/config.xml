@@ -7,14 +7,21 @@
     </modules>
     <frontend>
         <routers>
-            <likipe_utility>
+            <utility>
                 <use>standard</use>
                 <args>
                     <module>Likipe_Utility</module>
                     <frontName>utility</frontName>
                 </args>
-            </likipe_utility>
+            </utility>
         </routers>
+        <layout>
+            <updates>
+                <utility>
+                    <file>utility.xml</file>
+                </utility>
+            </updates>
+        </layout>
     </frontend>
     <global>
         <models>

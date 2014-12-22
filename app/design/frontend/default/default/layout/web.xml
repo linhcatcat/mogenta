@@ -7,4 +7,4 @@
             <block type="web/web" name="web" template="web/web.phtml" />
         </reference>
     </web_index_index>
-</layout> 
+</layout>

@@ -22,89 +22,12 @@
                 </demo>
             </updates>
         </layout>
-		<translate>
-            <modules>
-                <Likipe_Demo>
-                    <files>
-                        <default>Likipe_Demo.csv</default>
-                    </files>
-                </Likipe_Demo>
-            </modules>
-        </translate>
-    </frontend>
-    <admin>
-        <routers>
-			<demoadmin>
-				<use>admin</use>
-				<args>
-					<module>Likipe_Demo</module>
-					<frontName>demoadmin</frontName>
-				</args>
-			</demoadmin>
-        </routers>
-    </admin>
-    <adminhtml>
-		<layout>
-			<updates>
-				<demo>
-					<file>demo.xml</file>
-				</demo>
-			</updates>
-		</layout>
-		<translate>
-            <modules>
-                <Likipe_Demo>
-                    <files>
-                        <default>Likipe_Demo.csv</default>
-                    </files>
-                </Likipe_Demo>
-            </modules>
-        </translate>
-    </adminhtml>   
+    </frontend> 
     <global>
-        <models>
-            <demo>
-                <class>Likipe_Demo_Model</class>
-                <resourceModel>demo_mysql4</resourceModel>
-            </demo>
-            <demo_mysql4>
-                <class>Likipe_Demo_Model_Mysql4</class>
-                <entities>
-                    <demo>
-                        <table>demo</table>
-                    </demo>
-                </entities>
-            </demo_mysql4>
-        </models>
-        <resources>
-            <demo_setup>
-                <setup>
-                    <module>Likipe_Demo</module>
-                </setup>
-                <connection>
-                    <use>core_setup</use>
-                </connection>
-            </demo_setup>
-            <demo_write>
-                <connection>
-                    <use>core_write</use>
-                </connection>
-            </demo_write>
-            <demo_read>
-                <connection>
-                    <use>core_read</use>
-                </connection>
-            </demo_read>
-        </resources>
         <blocks>
             <demo>
                 <class>Likipe_Demo_Block</class>
             </demo>
         </blocks>
-        <helpers>
-            <demo>
-                <class>Likipe_Demo_Helper</class>
-            </demo>
-        </helpers>
     </global>
 </config>
