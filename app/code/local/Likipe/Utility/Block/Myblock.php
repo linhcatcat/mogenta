@@ -7,7 +7,8 @@ class Likipe_Utility_Block_Myblock extends Mage_Core_Block_Template
         $retour='';
         /* we are doing the query to select all elements of the pfay_test table (thanks to our model test/test and we sort them by id_pfay_test */
         $collection = Mage::getModel('utility/utility')->getCollection()
-                                 ->setOrder('id_likipe_utility','asc');
+                                //->addFilter('telephone', '0000000009')
+                                ->setOrder('id_likipe_utility','asc');
         /* then, we check the result of the query and with the function getData() */
         foreach($collection as $data)
         {
