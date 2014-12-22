@@ -45,6 +45,11 @@
 						<sort_order>0</sort_order>
 						<action>web/adminhtml_web</action>
 					</items>
+                    <add module="web">
+                        <title>Add Items</title>
+                        <sort_order>1</sort_order>
+                        <action>web/index/index</action>
+                    </add>
 				</children>
 			</web>
 		</menu>

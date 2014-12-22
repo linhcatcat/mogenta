@@ -16,4 +16,34 @@
             </likipe_utility>
         </routers>
     </frontend>
+    <global>
+        <models>
+            <utility>
+                <class>Likipe_Utility_Model</class>
+                <resourceModel>utility_mysql4</resourceModel>
+            </utility>
+            <utility_mysql4>
+                <class>Likipe_Utility_Model_Mysql4</class>
+                <entities>
+                    <utility>
+                        <table>likipe_utility</table>
+                    </utility>
+                </entities>
+            </utility_mysql4>
+        </models>
+            <!-- allow the plugin to read and write -->
+        <resources>
+            <!-- connection to write -->
+            <utility_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </utility_write>
+        </resources>
+        <blocks>
+            <utility>
+                <class>Likipe_Utility_Block</class>
+            </utility>
+        </blocks>
+    </global>
 </config>
