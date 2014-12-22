@@ -4,7 +4,7 @@
     </default>
     <utility_index_index>
         <reference name="content">
-            <block type="utility/monblock"  name="afficher_monblock" template="utility/afficher.phtml" />
+            <block type="utility/myblock"  name="afficher_monblock" template="utility/afficher.phtml" />
         </reference>
     </utility_index_index>
 </layout>
