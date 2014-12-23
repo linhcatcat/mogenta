@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Likipe_MyProduct>
+            <version>1.0.0</version>
+        </Likipe_MyProduct>
+    </modules>
+    <global>
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_view>Likipe_MyProduct_Block_Catalog_Product_View</product_view>
+                </rewrite>
+            </catalog>
+        </blocks>
+        <models>
+            <customer>
+                <rewrite>
+                    <product>Likipe_MyProduct_Model_Customer</product>
+                </rewrite>
+            </customer>
+        </models>
+    </global>
+</config>
