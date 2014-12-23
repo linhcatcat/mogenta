@@ -3,6 +3,7 @@
 /app/locale
 /app/Mage.php
 /app/.htaccess
+/app/etc/local.xml
 /downloader
 /errors
 /includes
