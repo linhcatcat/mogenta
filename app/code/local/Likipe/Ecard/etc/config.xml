@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Likipe_Ecard>
+            <version>1.0.0</version>
+            <depends>
+            <!-- no dependencies -->
+            </depends>
+        </Likipe_Ecard>
+    </modules>
+    <frontend>
+        <routers>
+            <route_ecard>
+                <use>standard</use>
+                <args>
+                    <module>Likipe_Ecard</module>
+                    <frontName>ecard</frontName>
+                </args>
+            </route_ecard>
+        </routers>
+    </frontend>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ecard_section translate="title">
+                                            <title>My Section </title>
+                                            <sort_order>100</sort_order>
+                                        </ecard_section>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

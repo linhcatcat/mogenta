@@ -19,4 +19,10 @@ class Likipe_Utility_Block_Myblock extends Mage_Core_Block_Template
         Mage::getSingleton('adminhtml/session')->addSuccess('Cool Ca marche !!');
         return $retour;
     }
+
+    public function bytwoblock()
+    {
+        $helper = Mage::helper('utility');
+        return '2*2 = '.$helper->bytwo(2);
+    }
 }

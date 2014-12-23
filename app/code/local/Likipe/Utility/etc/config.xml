@@ -103,5 +103,10 @@
 				</observers>
 			</cms_page_prepare_save>
 		</events>
+		<helpers>
+		   	<utility>
+		        <class>Likipe_Utility_Helper</class>
+		    </utility>
+		</helpers>
 	</global>
 </config>

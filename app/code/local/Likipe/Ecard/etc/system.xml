@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<config>
+    <tabs>
+        <ecard_tab translate="label">
+            <label>Cartes</label>
+            <sort_order>100</sort_order>
+        </ecard_tab>
+    </tabs>
+    <sections>
+        <ecard_section translate="label">
+            <label>Cartes</label>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>ecard_tab</tab>
+            <groups>
+                <ecard_group translate="label">
+                    <label>Config</label>
+                    <comment>Card Configuration</comment>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <ecard_field translate="label comment">
+                            <label>Card Number</label>
+                            <comment>a text to help</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_input>text</frontend_input>
+                        </ecard_field>
+                    </fields>
+                </ecard_group>
+            </groups>
+        </ecard_section>
+    </sections>
+</config>
