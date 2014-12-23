@@ -90,5 +90,18 @@
 				<class>Likipe_Utility_Block</class>
 			</utility>
 		</blocks>
+		<events>
+			<cms_page_prepare_save>
+				<observers>
+					<Likipe_Utility_Model_Observer>
+					<!--<Utility_Observer>-->
+	       				<type>singleton</type>
+	       				<class>utility/observer</class>
+	       				<method>saveCmsPageObserve</method>
+       				<!--</Utility_Observer>-->
+	   				</Likipe_Utility_Model_Observer>
+				</observers>
+			</cms_page_prepare_save>
+		</events>
 	</global>
 </config>
