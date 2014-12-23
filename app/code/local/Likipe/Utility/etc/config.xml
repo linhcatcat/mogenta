@@ -49,8 +49,14 @@
 				<children>
 					<set_time>
 						<title>Adress book</title>
+						<sort_order>1000</sort_order>
 						<action>adminutility/adminhtml_index</action>
 					</set_time>
+					<add_contact>
+						<title>Add Contact</title>
+						<sort_order>1001</sort_order>
+						<action>adminutility/adminhtml_index/new</action>
+					</add_contact>
 				</children>
 			</utility>
 		</menu>

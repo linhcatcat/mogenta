@@ -8,7 +8,7 @@ class Likipe_Utility_Block_Adminhtml_Utility_Edit_Tab_Form extends Mage_Adminhtm
 		$fieldset = $form->addFieldset('utility_form', array('legend'=>'ref information'));
 		$fieldset->addField('nom', 'text',
 			array(
-				'label' => 'Nom',
+				'label' => 'Name',
 				'class' => 'required-entry',
 				'required' => true,
 				'name' => 'nom',
@@ -16,7 +16,7 @@ class Likipe_Utility_Block_Adminhtml_Utility_Edit_Tab_Form extends Mage_Adminhtm
 		);
 		$fieldset->addField('prenom', 'text',
 			array(
-				'label' => 'Prenom',
+				'label' => 'First Name',
 				'class' => 'required-entry',
 				'required' => true,
 				'name' => 'prenom',
@@ -24,7 +24,7 @@ class Likipe_Utility_Block_Adminhtml_Utility_Edit_Tab_Form extends Mage_Adminhtm
 		);
 		$fieldset->addField('telephone', 'text',
 			array(
-				'label' => 'telephone',
+				'label' => 'Telephone',
 				'class' => 'required-entry',
 				'required' => true,
 				'name' => 'telephone',
