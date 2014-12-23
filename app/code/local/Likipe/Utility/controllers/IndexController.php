@@ -8,7 +8,7 @@ class Likipe_Utility_IndexController extends Mage_Core_Controller_Front_Action
    	}
 
    	public function mamethodeAction () {
-     	echo 'test mymethod';
+     	echo 'utility mymethod';
     }
 
     public function saveAction()
