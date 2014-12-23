@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<frontend>
+		<routers>
+	     	<checkout>
+	         	<args>
+		           	<modules>
+		             	<Likipe_Checkout before="Mage_Checkout">Likipe_Checkout</Likipe_Checkout>
+		           	</modules>
+	         	</args>
+	     	</checkout>
+	   	</routers>
+	</frontend>
+</config>
