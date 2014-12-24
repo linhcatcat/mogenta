@@ -1,6 +1,15 @@
 /app/code/community
 /app/code/core
-/app/locale
+/app/locale/*
+!/app/locale/de_DE
+!/app/locale/en_US
+!/app/locale/fr_FR
+/app/locale/de_DE/*
+/app/locale/en_US/*
+/app/locale/fr_FR/*
+!/app/locale/de_DE/Likipe_Utility.csv
+!/app/locale/en_US/Likipe_Utility.csv
+!/app/locale/fr_FR/Likipe_Utility.csv
 /app/Mage.php
 /app/.htaccess
 /app/etc/local.xml

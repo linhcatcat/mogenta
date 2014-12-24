@@ -22,6 +22,15 @@
 				</utility>
 			</updates>
 		</layout>
+		<translate>
+		  	<modules>
+		    	<Likipe_Utility>
+	             	<files>
+		          		<default>Likipe_Utility.csv</default>
+		       		</files>
+		    	</Likipe_Utility>
+		  	</modules>
+		</translate>
 	</frontend>
 	<admin>
 		<routers>
