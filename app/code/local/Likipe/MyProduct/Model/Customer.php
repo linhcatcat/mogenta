@@ -1,5 +1,5 @@
 <?php
-class Likipe_MyProduct_Model_Customer  extends Mage_Customer_Model_Customer
+class Likipe_MyProduct_Block_Model_Customer  extends Mage_Customer_Model_Customer
 {
 	public function __construct()
 	{
