@@ -29,6 +29,7 @@
 /*.php.*
 /*.php
 /*.txt
+!/readme.txt
 /*.sample
 /LICENSE.html
 /mage
