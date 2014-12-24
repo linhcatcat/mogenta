@@ -2,7 +2,7 @@
 <config>
 	<modules>
 		<Likipe_Ecard>
-			<active> true </active>
+			<active>true</active>
 			<codePool>local</codePool>
 		</Likipe_Ecard>
 	</modules>

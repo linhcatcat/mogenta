@@ -2,8 +2,8 @@
 <config>
   	<modules>
     	<Likipe_MyProduct>
-        	<active> true </active>
-        	<codePool> local </codePool>
+        	<active>true</active>
+        	<codePool>local</codePool>
      	</Likipe_MyProduct>
    	</modules>
 </config>
