@@ -16,7 +16,8 @@
 /downloader
 /errors
 /includes
-/js
+/js/*
+!/js/custom.js
 /lib
 /media
 /pkginfo
