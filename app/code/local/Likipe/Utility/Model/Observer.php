@@ -9,8 +9,8 @@ class Likipe_Utility_Model_Observer extends Varien_Event_Observer
 		$event = $observer->getEvent();
 		$model = $event->getPage();
 		//$model->setData('title','Hello Chao');
-		print_r($model->getData());
-		die('test');
+		//print_r($model->getData());
+		//die('test');
 	}
 }
 ?>

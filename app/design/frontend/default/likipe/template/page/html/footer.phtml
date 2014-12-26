@@ -27,6 +27,16 @@
 <div class="footer-container">
     <div class="footer">
         <?php echo $this->getChildHtml() ?>
+        <?php echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe.phtml')->toHtml(); ?>
+        <?php //echo $this->getChildHtml('footer.newsletter'); ?>
+        <?php echo Mage::getBaseUrl(); ?><br/>
+        <?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN); ?><br/>
+        <?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA); ?><br/>
+        <?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_JS); ?><br/>
+        <?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?><br/>
+        <?php echo Mage::helper('core/url')->getCurrentUrl(); ?><br/>
+        <?php echo Mage::helper('core/url')->getHomeUrl(); ?><br/>
+
         <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
         <address><?php echo $this->getCopyright() ?></address>
         <p><a><?php echo $this->__('Hello Chào!') ?></a></p>
