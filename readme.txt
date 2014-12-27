@@ -8,6 +8,8 @@ http://blog.magestore.com/
 http://blog.magestore.com/explore-magento-2-0-with-banner-slider-extension/
 http://blog.magestore.com/magento-tutorial-how-to-pass-magento-certification-exam-in-30-days/
 
+http://www.atwix.com/magento/
 http://www.atwix.com/magento/add-category-attribute/
+https://github.com/Atwix/Browseruncaching
 
 https://appengine.google.com/
