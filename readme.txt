@@ -11,5 +11,7 @@ http://blog.magestore.com/magento-tutorial-how-to-pass-magento-certification-exa
 http://www.atwix.com/magento/
 http://www.atwix.com/magento/add-category-attribute/
 https://github.com/Atwix/Browseruncaching
+http://www.atwix.com/magento/multipage-sitemap-xml-extension/
+https://github.com/Atwix/Sitemap
 
 https://appengine.google.com/
