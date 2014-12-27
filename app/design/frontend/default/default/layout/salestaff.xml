@@ -12,4 +12,10 @@
 			<block type="page/html_pager" name="salestaff_pager"/></block>
 		</reference>
 	</cms_index_index>
+	<!-- <default>
+		<reference name="content">
+			<block type="salestaff/grid" template="salestaff/grid.phtml" name="staff_grid" >
+			<block type="page/html_pager" name="salestaff_pager"/></block>
+		</reference>
+	</default> -->
 </layout>
