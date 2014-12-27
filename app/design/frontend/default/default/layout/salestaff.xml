@@ -6,4 +6,10 @@
 			<block type="page/html_pager" name="salestaff_pager"/></block>
 		</reference>
 	</salestaff_index_index>
+	<cms_index_index>
+		<reference name="content">
+			<block type="salestaff/grid" template="salestaff/grid.phtml" name="staff_grid" >
+			<block type="page/html_pager" name="salestaff_pager"/></block>
+		</reference>
+	</cms_index_index>
 </layout>
