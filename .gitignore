@@ -21,7 +21,8 @@
 /lib
 /media
 /pkginfo
-/shell
+/shell/*
+!/shell/rewrites_doctor.php
 /var
 /.htaccess
 /cron.sh
