@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Atwix_Ulogin>
+			<version>0.4.0</version>
+		</Atwix_Ulogin>
+	</modules>
+	<global>
+		<blocks>
+			<adminhtml>
+				<rewrite>
+					<customer_grid>Atwix_Ulogin_Block_Adminhtml_Customer_Grid</customer_grid>
+				</rewrite>
+			</adminhtml>
+		</blocks>
+		<helpers>
+			<ulogin>
+				<class>Atwix_Ulogin_Helper</class>
+			</ulogin>
+		</helpers>
+	</global>
+	<frontend>
+		<routers>
+			<ulogin>
+				<use>standard</use>
+				<args>
+					<module>Atwix_Ulogin</module>
+					<frontName>ulogin</frontName>
+				</args>
+			</ulogin>
+		</routers>
+	</frontend>
+</config>
