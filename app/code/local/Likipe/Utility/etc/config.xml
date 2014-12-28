@@ -53,7 +53,7 @@
 		</layout>
 		<menu>
 			<utility translate="title" module="adminhtml">
-				<title>My plugins</title>
+				<title>Likipe Utility</title>
 				<sort_order>100</sort_order>
 				<children>
 					<set_time>
@@ -66,6 +66,11 @@
 						<sort_order>1001</sort_order>
 						<action>adminutility/adminhtml_index/new</action>
 					</add_contact>
+					<import_price>
+						<title>Import</title>
+						<sort_order>1002</sort_order>
+						<action>adminutility/adminhtml_index/test</action>
+					</import_price>
 				</children>
 			</utility>
 		</menu>

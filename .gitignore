@@ -23,7 +23,8 @@
 /pkginfo
 /shell/*
 !/shell/rewrites_doctor.php
-/var
+/var/*
+!/var/importexport
 /.htaccess
 /cron.sh
 /favicon.ico

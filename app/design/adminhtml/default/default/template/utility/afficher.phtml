@@ -1,4 +1,40 @@
 <?php
-	echo $this->methodblock();
+	//echo $this->methodblock();
 ?>
-<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>"  />
+<!-- <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>"  /> -->
+
+<div class="content-header">
+    <h3 class="icon-head head-adminhtml-import">Import</h3>
+</div>
+<div class="entry-edit">
+    <form id="edit_form" action="<?php echo $this->getUrl('*/*/import')?>" method="post" enctype="multipart/form-data" >
+        <div>
+            <input type="hidden" name="form_key" value="<?php echo Mage::getSingleton('core/session')->getFormKey(); ?>" />
+        </div>
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-edit-form fieldset-legend">Import</h4>
+            <div class="form-buttons"></div>
+        </div>
+        <div class="fieldset " id="base_fieldset">
+            <div class="hor-scroll">
+                <table cellspacing="0" class="form-list">
+                    <tbody>
+                    <tr>
+                        <td class="label"><label for="import_file">Select File to Import <span class="required">*</span></label></td>
+                        <td class="value">
+                            <input id="import_file" name="import_file" value="" title="Select File to Import" type="file" class="required-entry">
+                            <div class="validation-advice" id="advice-required-entry-import_file" style="opacity: 0; display: none;">This is a required field.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label"></td>
+                        <td>
+                            &nbsp;&nbsp;<input type="submit" value="Import" id="import_csv_group_price">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

@@ -2,8 +2,12 @@
 <layout version="0.1.0">
 	<utility_adminhtml_index_index>
 		<reference name="content">
-			<!--<block type="utility/monblock"  name="afficher_monbloc" template="utility/afficher.phtml" />-->
 			<block type="utility/adminhtml_grid" name="utility" />
 		</reference>
 	</utility_adminhtml_index_index>
+	<utility_adminhtml_index_test>
+		<reference name="content">
+			<block type="utility/monblock"  name="afficher_monbloc" template="utility/afficher.phtml" />
+		</reference>
+	</utility_adminhtml_index_test>
 </layout>

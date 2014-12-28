@@ -12,6 +12,107 @@ class Likipe_Utility_Adminhtml_IndexController extends Mage_Adminhtml_Controller
 		$this->_initAction();
 		$this->renderLayout();
 	}
+  public function testAction()
+  {
+    $this->_initAction();
+    $this->renderLayout();
+  }
+
+  /**
+     * Import action, import group price from csv
+     */
+    public function importAction()
+    {
+        $fileTrue = $this->fileImportCsvUpload();
+        if ($fileTrue == true) {
+            $file = 'var/importexport/example.csv';
+            $csv = new Varien_File_Csv();
+            $data = $csv->getData($file);
+            unset($data[0]);
+            foreach ($data as $value) {
+                $productId = $value[0];
+ 
+                $product = Mage::getModel('catalog/product')->setStoreId(0)->load($productId);
+                 
+                if ($product == false || !$product->getSku()) {
+                    continue;
+                }
+                $pricesFilterKeys = array('price_id', 'all_groups', 'website_price');
+ 
+                $groupPrice = $product->getData('group_price');
+                $key = count($groupPrice);
+                $groupPrice[$key+1]['website_id'] = $value[1];
+                $groupPrice[$key+1]['cust_group'] = $value[2];
+                $groupPrice[$key+1]['price'] = $value[3];
+ 
+                $product->setData('group_price', $this->_filterOutArrayKeys($groupPrice, $pricesFilterKeys, true));
+ 
+                $product->save();
+            }
+            Mage::getSingleton('core/session')->addSuccess("Import success");
+        } else {
+            Mage::getSingleton('checkout/session')->addError("Import is failed.");
+        }
+ 
+        $this->_redirect("*/*/index");
+    }
+ 
+    /**
+     * Remove specified keys from array
+     *
+     * @param array $array
+     * @param array $keys
+     * @param bool $dropOrigKeys if true - return array as indexed array
+     * @return array
+     */
+    protected function _filterOutArrayKeys(array $array, array $keys, $dropOrigKeys = false)
+    {
+        $isIndexedArray = is_array(reset($array));
+        if ($isIndexedArray) {
+            foreach ($array as &$value) {
+                if (is_array($value)) {
+                    $value = array_diff_key($value, array_flip($keys));
+                }
+            }
+            if ($dropOrigKeys) {
+                $array = array_values($array);
+            }
+            unset($value);
+        } else {
+            $array = array_diff_key($array, array_flip($keys));
+        }
+ 
+        return $array;
+    }
+ 
+    /**
+     * Upload csv file and save in var/importexport/example.csv
+     *
+     * @return bool
+     */
+    public function fileImportCsvUpload()
+    {
+        if (isset($_FILES['import_file']['name']) and (file_exists($_FILES['import_file']['tmp_name']))) {
+            try {
+                $uploader = new Varien_File_Uploader('import_file');
+                $uploader->setAllowedExtensions(array('csv')); // or pdf or anything
+ 
+ 
+                $uploader->setAllowRenameFiles(false);
+                $uploader->setFilesDispersion(false);
+ 
+                $path = Mage::getBaseDir('var') . DS .'importexport' . DS;
+ 
+                $uploader->save($path, $_FILES['fileinputname']['name'] = 'example.csv');
+ 
+                $data['fileinputname'] = $_FILES['fileinputname']['name'];
+                return true;
+            }catch(Exception $e) {
+                Mage::getSingleton('core/session')->addError("File extension is not supported!");
+            }
+        }
+    }
+
 	public function editAction()
     {
        	$utilityId = $this->getRequest()->getParam('id');
