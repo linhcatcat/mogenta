@@ -30,3 +30,5 @@ http://www.magentocommerce.com/wiki/5_-_modules_and_development/0_-_module_devel
 http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/module_config.xml#websites
 
 https://appengine.google.com/
+
+http://www.atwix.com/magento/customize-system-settings/

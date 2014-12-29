@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Atwix_SystemConfig>
+            <version>1.0.0</version>
+        </Atwix_SystemConfig>
+    </modules>
+    <global>
+        <models>
+            <atwix_systemconfig>
+                <class>Atwix_SystemConfig_Model</class>
+            </atwix_systemconfig>
+        </models>
+        <events>
+            <adminhtml_init_system_config>
+                <observers>
+                    <atwix_init_system_config>
+                        <class>atwix_systemconfig/observer</class>
+                        <method>changeSystemConfig</method>
+                    </atwix_init_system_config>
+                </observers>
+            </adminhtml_init_system_config>
+        </events>
+    </global>
+</config>
