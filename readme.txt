@@ -20,4 +20,10 @@ http://www.atwix.com/blog/page/3/
 http://www.atwix.com/magento/yandex-market-price-list-generation/
 http://www.atwix.com/magento/import-group-price-from-csv/
 
+https://github.com/Atwix/confirminvoice
+http://www.atwix.com/magento/pdf-invoice-email/
+
+http://www.magentocommerce.com/wiki/5_-_modules_and_development/0_-_module_development_in_magento/custom_module_with_custom_database_table
+http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/module_config.xml#websites
+
 https://appengine.google.com/
