@@ -14,6 +14,7 @@ http://www.atwix.com/magento/add-category-attribute/
 https://github.com/Atwix/Browseruncaching
 http://www.atwix.com/magento/multipage-sitemap-xml-extension/
 https://github.com/Atwix/Sitemap
+https://github.com/Atwix/Blockspeed
 
 http://www.atwix.com/blog/page/3/
 http://www.atwix.com/magento/yandex-market-price-list-generation/

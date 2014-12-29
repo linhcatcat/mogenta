@@ -71,6 +71,11 @@
 						<sort_order>1002</sort_order>
 						<action>adminutility/adminhtml_index/test</action>
 					</import_price>
+					<settings module="adminhtml" translate="title">
+	                    <title>Settings</title>
+	                    <sort_order>1003</sort_order>
+	                    <action>adminhtml/system_config/edit/section/atwix_blockspeed</action>
+	                </settings>
 				</children>
 			</utility>
 		</menu>
