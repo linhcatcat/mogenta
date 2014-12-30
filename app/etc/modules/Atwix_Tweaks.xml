@@ -3,7 +3,7 @@
     <modules>
         <Atwix_Tweaks>
             <active>true</active>
-            <codePool>community</codePool>
+            <codePool>local</codePool>
         </Atwix_Tweaks>
     </modules>
 </config>

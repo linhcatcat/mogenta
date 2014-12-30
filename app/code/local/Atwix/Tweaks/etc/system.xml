@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <atwix translate="label" module="atwixtweaks">
+            <label>Atwix</label>
+            <sort_order>99999</sort_order>
+        </atwix>
+    </tabs>
+    <sections>
+        <atwixtweaks translate="label" module="atwixtweaks">
+            <label>Tweaks</label>
+            <tab>atwix</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>99999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <tools translate="label">
+                    <label>Tools</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <check translate="label">
+                            <label>Check</label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>atwixtweaks/adminhtml_system_config_form_button</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </check>
+                    </fields>
+                </tools>
+            </groups>
+        </atwixtweaks>
+    </sections>
+</config>
