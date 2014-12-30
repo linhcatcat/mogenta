@@ -20,7 +20,7 @@
  *
  * @category    design
  * @package     default_default
- * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
@@ -49,7 +49,7 @@
                     </strong>
                 </small>
                 <?php if ($_comment = $this->getItemComment($_item)): ?>
-                    <br/><?php echo $_comment ?>
+                <br/><?php echo preg_replace("/\[name\](.*?)\[\/name\]/", "<span class='comment-sender'>$1</span>", $_comment) ?>
                 <?php endif; ?>
             </li>
         <?php endforeach; ?>
