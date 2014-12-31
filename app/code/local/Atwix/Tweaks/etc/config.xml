@@ -15,8 +15,32 @@
             <atwixtweaks>
                 <class>Atwix_Tweaks_Block</class>
             </atwixtweaks>
+            <catalog>
+                <rewrite>
+                    <product_list_toolbar>Atwix_Tweaks_Block_Product_List_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>
         </blocks>
+        <models>
+            <catalog>
+                <rewrite>
+                    <config>Atwix_Tweaks_Model_Catalog_Config</config>
+                </rewrite>
+            </catalog>
+        </models>
     </global>
+    <frontend>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <customer_group_handle>
+                        <class>module/observer</class>
+                        <method>addCustomerGroupHandle</method>
+                    </customer_group_handle>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+    </frontend>
     <admin>
         <routers>
             <adminhtml>
