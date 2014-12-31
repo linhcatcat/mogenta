@@ -5,6 +5,14 @@
             <atwixcms>
                 <class>Atwix_CMS_Model</class>
             </atwixcms>
+            <cms_mysql4>
+                <class>Atwix_CMS_Model_Mysql4</class>
+                <entities>
+                    <cms>
+                        <table>cms_page</table>
+                    </cms>
+                </entities>
+            </cms_mysql4>
         </models>
         <events>
             <adminhtml_cms_page_edit_tab_content_prepare_form>

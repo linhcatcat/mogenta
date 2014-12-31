@@ -23,9 +23,10 @@ class Atwix_CMS_Model_Observer extends Varien_Event_Observer
 
     public function savePage($observer)
     {
-        $event = $observer->getEvent();
-        $cmsPage = Mage::getSingleton('cms/page')->getPage();
-        //$cmsPage->save();
-        var_dump($cmsPage);exit();
+        //$requestParams = $observer->getRequest()->getParams(); 
+        $page = $observer->getPage();
+        //$page->setData('request_params',$requestParams);
+        $page->save();
+        //return $this;
     }
 }
