@@ -32,3 +32,9 @@ http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/module
 https://appengine.google.com/
 
 http://www.atwix.com/magento/customize-system-settings/
+
+
+<!– CONTACT FORM –>
+{{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}
+<!– END OF CONTACT FORM –>
+{{block type="cms/block" block_id="footer_links1"}}

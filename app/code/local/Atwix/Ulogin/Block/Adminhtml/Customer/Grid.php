@@ -11,7 +11,7 @@ class Atwix_Ulogin_Block_Adminhtml_Customer_Grid extends Mage_Adminhtml_Block_Cu
             'caption' => 'Log in',
             'popup' => true,
             'url' => array(
-             'base' => 'ulogin/login/autologin'),
+            'base' => 'ulogin/login/autologin'),
             'field' => 'customerid'
         );
         $column->setActions( $actions );
