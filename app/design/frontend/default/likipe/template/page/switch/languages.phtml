@@ -35,10 +35,11 @@
 <div class="form-language">
     <div class="langs-wrapper">
     <?php foreach ($this->getStores() as $_lang): ?>
+    	<?php $_selected = ($_lang->getId() == $this->getCurrentStoreId()) ? " actived" : "" ?>
         <?php if ($_lang->getCode() != 'default'): ?>
-        <a title="<?php echo $_lang->getName(); ?>" class="lang-flag" href="<?php echo $this->getCurrentUrl() . '?___store=' . $_lang->getCode();?>"><img src="<?php echo $this->getSkinUrl('images/flags/' . $_lang->getCode() . '.png');?>" alt=""></a>
+        <a title="<?php echo $_lang->getName(); ?>" class="lang-flag<?php echo $_selected; ?>" href="<?php echo $this->getCurrentUrl() . '?___store=' . $_lang->getCode();?>"><img src="<?php echo $this->getSkinUrl('images/flags/' . $_lang->getCode() . '.png');?>" alt=""></a>
     	<?php else: ?>
-    	<a title="<?php echo $_lang->getName(); ?>" class="lang-flag" href="<?php echo $this->getCurrentUrl() . '?___store=' . $_lang->getCode();?>"><img src="<?php echo $this->getSkinUrl('images/flags/english.png');?>" alt=""></a>
+    	<a title="<?php echo $_lang->getName(); ?>" class="lang-flag<?php echo $_selected; ?>" href="<?php echo $this->getCurrentUrl() . '?___store=' . $_lang->getCode();?>"><img src="<?php echo $this->getSkinUrl('images/flags/english.png');?>" alt=""></a>
         <?php endif; ?>
     <?php endforeach; ?>
     </div>

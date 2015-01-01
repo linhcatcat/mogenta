@@ -1821,6 +1821,7 @@ tr.summary-details-excluded { font-style:italic; }
 	width: 100%;
 	height: 100%;
 }
+.lang-flag.actived,
 .lang-flag:hover {
-    border: 1px solid #FFF;
+    border: 1px solid #d96708;
 }
