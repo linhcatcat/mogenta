@@ -16,6 +16,7 @@ class Atwix_CMS_Model_Observer extends Varien_Event_Observer
             'label'     => Mage::helper('cms')->__('Content Custom'),
             'title'     => Mage::helper('cms')->__('Content Custom'),
             'disabled'  => false,
+            //'wysiwyg'   => true,
             //set field value
             'value'     => $model->getContentCustom()
         ));
