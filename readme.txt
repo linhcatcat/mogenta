@@ -33,6 +33,7 @@ https://appengine.google.com/
 
 http://www.atwix.com/magento/customize-system-settings/
 
+http://inchoo.net/category/magento/page/2/
 
 <!– CONTACT FORM –>
 {{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}
