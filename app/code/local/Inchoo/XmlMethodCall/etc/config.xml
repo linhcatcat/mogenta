@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Inchoo_XmlMethodCall>
+			<version>1.0.0</version>
+		</Inchoo_XmlMethodCall>
+	</modules>
+	<global>
+		<xml_method_call>
+			<payment_checkmo>
+				<name>Check / Money order </name>
+				<code>checkmo</code>
+				<add>
+					<model>inchoo_xmlmethodcall_model_checkmoAddVal</model>
+					<method>addValue</method>
+				</add>
+				<return>
+					<model>inchoo_xmlmethodcall_model_checkmoGetCod</model>
+					<method>getCode</method>
+				</return>
+			</payment_checkmo>
+		</xml_method_call>
+		<xml_method_call>
+			<payment_ccsave>
+				<name>Credit Card (saved) </name>
+				<code>ccsave</code>
+				<add>
+					<model>inchoo_xmlmethodcall_model_ccsaveAddVal</model>
+					<method>addValue</method>
+				</add>
+				<return>
+					<model>inchoo_xmlmethodcall_model_ccsaveGetCod</model>
+					<method>getCode</method>
+				</return>
+			</payment_ccsave>
+		</xml_method_call>
+		<models>
+			<Inchoo_XmlMethodCall>
+				<class>Inchoo_XmlMethodCall_Model</class>
+				<resourcemodel>inchoo_xmlmethodcall_mysql4</resourcemodel>
+			</Inchoo_XmlMethodCall>
+		</models>
+	</global>
+	<frontend>
+		<routers>
+			<xmlmethodcall>
+				<use>standard</use>
+				<args>
+					<module>Inchoo_XmlMethodCall</module>
+					<frontName>xmlmethodcall</frontName>
+				</args>
+			</xmlmethodcall>
+		</routers>
+	</frontend>
+</config>
