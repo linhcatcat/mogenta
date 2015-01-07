@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Inchoo_Translate>
+			<version>0.1.0</version>
+		</Inchoo_Translate>
+	</modules>
+	<frontend>
+		<routers>
+			<Inchoo_Translate>
+				<use>standard</use>
+				<args>
+					<module>Inchoo_Translate</module>
+					<frontName>inchoo</frontName>
+				</args>
+			</Inchoo_Translate>
+		</routers>
+	</frontend>
+	<global>
+		<models>
+			<inchoo_translate>
+				<class>Inchoo_Translate_Model</class>
+			</inchoo_translate>
+			<core>
+				<rewrite>
+					<locale>Inchoo_Translate_Model_Mage_Core_Model_Locale</locale>
+					<translate>Inchoo_Translate_Model_Mage_Core_Model_Translate</translate>
+				</rewrite>
+			</core>
+		</models>
+		<helpers>
+			<inchoo_translate>
+				<class>Inchoo_Translate_Helper</class>
+			</inchoo_translate>
+		</helpers>
+	</global>
+</config>
