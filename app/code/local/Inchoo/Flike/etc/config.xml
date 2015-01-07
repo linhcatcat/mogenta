@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inchoo_Flike>
+            <version>1.0.0.0</version>
+        </Inchoo_Flike>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <inchoo_flike>
+                    <file>inchoo/flike/flike.xml</file>
+                </inchoo_flike>
+            </updates>
+        </layout>        
+    </frontend>
+</config>

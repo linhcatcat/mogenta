@@ -1,0 +1,4 @@
+<?php $_product = Mage::registry('current_product') ?>
+<?php if ($_product && $_product->getId()): ?>
+<div class="fb-like" data-href="<?php echo $_product->getProductUrl() ?>" data-send="true" data-width="450" data-show-faces="true"></div>
+<?php endif; ?>

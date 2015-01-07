@@ -1,0 +1,8 @@
+<?php $_product = Mage::registry('current_product') ?>
+<?php if ($_product && $_product->getId()): ?>
+<meta property="og:title" content="<?php echo $this->stripTags($_product->getName(), null, true) ?>" />
+<meta property="og:type" content="product" />
+<meta property="og:image" content="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(130, 110); ?>" />
+<meta property="og:url" content="<?php echo $_product->getProductUrl() ?>" />
+<meta property="og:site_name" content="<?php echo Mage::app()->getStore()->getName() ?>" />
+<?php endif; ?>
