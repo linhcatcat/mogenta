@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inchoo_GPlusOne>
+            <version>1.0.0.0</version>
+        </Inchoo_GPlusOne>
+    </modules>
+    <global>
+        <blocks>
+            <inchoo_gplusone>
+                <class>Inchoo_GPlusOne_Block</class>
+            </inchoo_gplusone>
+        </blocks>
+    </global>
+ 
+    <frontend>
+        <layout>
+            <updates>
+                <inchoo_gplusone>
+                    <file>inchoo/gplusone.xml</file>
+                </inchoo_gplusone>
+            </updates>
+        </layout>
+    </frontend>
+</config>
