@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Inchoo_Translations>
+            <version>1.0.0</version>
+        </Inchoo_Translations>
+    </modules>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Inchoo_Translations>
+                    <files>
+                        <default>InchooTranslations.csv</default>
+                    </files>
+                </Inchoo_Translations>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
