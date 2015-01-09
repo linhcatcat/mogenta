@@ -9,6 +9,9 @@
 !/app/locale/de_DE/Likipe_Utility.csv
 !/app/locale/en_US/Likipe_Utility.csv
 !/app/locale/fr_FR/Likipe_Utility.csv
+!/app/locale/de_DE/InchooTranslations.csv
+!/app/locale/en_US/InchooTranslations.csv
+!/app/locale/fr_FR/InchooTranslations.csv
 /app/Mage.php
 /app/.htaccess
 /app/etc/local.xml
