@@ -1,0 +1,43 @@
+<config>
+    <modules>
+        <Inchoo_AddAllToCart>
+            <version>0.1.0</version>
+        </Inchoo_AddAllToCart>
+    </modules>
+    <global>
+        <models>
+            <addalltocart>
+                <class>Inchoo_AddAllToCart_Model</class>
+            </addalltocart>
+        </models>
+        <blocks>
+            <addalltocart>
+                <class>Inchoo_AddAllToCart_Block</class>
+            </addalltocart>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <addalltocart>
+                <use>standard</use>
+                <args>
+                    <module>Inchoo_AddAllToCart</module>
+                    <frontName>emptyCart</frontName>
+                </args>
+            </addalltocart>
+        </routers>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <inchoo_addalltocart_init>
+                        <type>singleton</type>
+                        <class>Inchoo_AddAllToCart_Model_Observer</class>
+                        <method>injectLinkCart</method>
+                    </inchoo_addalltocart_init>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </frontend>
+
+</config>

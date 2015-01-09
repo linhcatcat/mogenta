@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Inchoo_AddAllToCart>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Inchoo_AddAllToCart>
+    </modules>
+</config>
