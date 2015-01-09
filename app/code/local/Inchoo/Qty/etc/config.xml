@@ -1,0 +1,32 @@
+<config>
+    <modules>
+        <Inchoo_Qty>
+            <version>0.1.0</version>
+        </Inchoo_Qty>
+    </modules>
+    <global>
+        <models>
+            <grouped>
+                <class>Inchoo_Qty_Model</class>
+            </grouped>
+        </models>
+        <blocks>
+            <grouped>
+                <class>Inchoo_Qty_Blocks</class>
+            </grouped>
+        </blocks>
+    </global>
+    <frontend>
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <inchoo_grouped_init>
+                        <type>singleton</type>
+                        <class>Inchoo_Qty_Model_Observer</class>
+                        <method>injectJavascriptForQty</method>
+                    </inchoo_grouped_init>
+                </observers>
+            </core_block_abstract_to_html_after>
+        </events>
+    </frontend>
+</config>

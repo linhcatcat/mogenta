@@ -1,0 +1,56 @@
+<script type="text/javascript">
+/**
+ * @category   Inchoo
+ * @package    Inchoo_Qty
+ * @author     Mladen Lotar - mladen.lotar@surgeworks.com
+ */
+//<![CDATA[
+	var parentTD;
+	var newDiv;
+	var navigationDiv;
+	var i = 1;
+	var currentElement = null;
+
+	$$('input.qty').each(function(el){
+		parentTD = el.parentNode;
+
+		newDiv = document.createElement('div');
+		Element.extend(newDiv);
+		newDiv.id = i++;
+		newDiv.update(parentTD.innerHTML).innerHTML; //set new input inside new div
+		parentTD.update().innerHTML; //erase old input
+		parentTD.appendChild(newDiv); //show new div
+
+		navigationDiv = document.createElement('div');
+		Element.extend(navigationDiv);
+		navigationDiv.update('<p class="up">+</p><p class="dn">-</p>').innerHTML;
+		newDiv.appendChild(navigationDiv);
+	});
+
+	$$('p.up').each(function(el){
+		el.observe('click',function(event){
+			currentElement = el.parentNode.previous();
+			i = 0; //In case we get in to infinite loop
+			while(currentElement.type != 'text' && i < 5){
+				currentElement = currentElement.previous();
+				i++;
+			}
+			currentElement.value = parseInt(currentElement.value) + 1;
+		});
+	});
+
+	$$('p.dn').each(function(el){
+		el.observe('click',function(event){
+			currentElement = el.parentNode.previous();
+			i = 0; //In case we get in to infinite loop
+			while(currentElement.type != 'text' && i < 5){
+				currentElement = currentElement.previous();
+				i++;
+			}
+			if(parseInt(currentElement.value) > 0){
+				currentElement.value = parseInt(currentElement.value) - 1;
+			}
+		});
+	});
+//]]>
+</script>
