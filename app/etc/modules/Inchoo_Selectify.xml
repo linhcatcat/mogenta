@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Inchoo_Selectify>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Inchoo_Selectify>
+    </modules>
+</config>
