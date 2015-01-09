@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Inchoo_ExtendedMenu>
+            <version>0.1.0</version>
+        </Inchoo_ExtendedMenu>
+    </modules>
+    <global>
+        <blocks>
+            <configurable>
+                <class>Inchoo_Configurable_Block</class>
+            </configurable>
+            <adminhtml>
+                <rewrite>
+                    <page_menu>Inchoo_ExtendedMenu_Block_Adminhtml_Menu</page_menu>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <blocks>
+            <configurable>
+                <class>Inchoo_Configurable_Block</class>
+            </configurable>
+        </blocks>
+    </global>
+</config>
