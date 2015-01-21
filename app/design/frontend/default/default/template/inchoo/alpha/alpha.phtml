@@ -1,0 +1,16 @@
+<form id="alpha-module-maker" name="alpha-module-maker" action="<?php echo $this->getUrl('alpha/index/create') ?>" method="post">
+	<ul>
+		<li>
+			<span class="label"><label for=""><?php echo $this->__('Company name') ?></label></span>
+			<input type="text" name="module[company_name]" id="module_company_name" />
+		</li>
+		<li>
+			<span class="label"><label for=""><?php echo $this->__('Module name') ?></label></span>
+			<input type="text" name="module[module_name]" id="module_module_name" />
+		</li>
+		<li>
+			<input type="submit" name="module[submit]" id="module_submit" value="<?php echo $this->__('Create') ?>" />
+			<input type="reset" name="module[reset]" id="module_reset" value="<?php echo $this->__('Reset') ?>" />
+		</li>					
+	</ul>
+</form>

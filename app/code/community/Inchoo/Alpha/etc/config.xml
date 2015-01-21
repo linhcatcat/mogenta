@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Inchoo_Alpha>
+            <version>1.0.0</version>
+        </Inchoo_Alpha>
+    </modules>
+    
+    <global>
+        <blocks>
+            <alpha>
+                <class>Inchoo_Alpha_Block</class>
+            </alpha>
+        </blocks>     
+        <helpers>
+            <alpha>
+                <class>Inchoo_Alpha_Helper</class>
+            </alpha>
+        </helpers>        
+        <models>
+            <alpha>
+                <class>Inchoo_Alpha_Model</class>
+                <resourceModel>alpha_mysql4</resourceModel>
+            </alpha>
+            <alpha_mysql4>
+                <class>Inchoo_Alpha_Model_Mysql4</class>
+                <entities>
+                    <alpha>
+                        <table>alpha_alpha</table>
+                    </alpha>                
+                </entities>
+            </alpha_mysql4>
+        </models>
+        <resources>
+            <alpha_setup>
+                <setup>
+                    <module>Inchoo_Alpha</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>	                
+            </alpha_setup>
+            
+            <alpha_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </alpha_read>            
+            
+            <alpha_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </alpha_write>             
+            
+        </resources>
+
+    </global>
+    
+    <frontend>
+        <routers>
+         <alpha>
+            <use>standard</use>
+            <args>
+               <module>Inchoo_Alpha</module>
+               <frontName>alpha</frontName>
+            </args>
+         </alpha>
+        </routers>
+        
+        </frontend> 
+    
+</config>
