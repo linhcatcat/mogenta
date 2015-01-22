@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Ajzele_SimpleModel>
+            <version>0.0.1</version>
+        </Ajzele_SimpleModel>
+    </modules>
+    
+    <global>
+    
+        <models>
+        
+            <hello>
+				<class>Ajzele_SimpleModel_Model</class>
+				<resourceModel>hello_mysql4</resourceModel>		
+            </hello>
+            
+            <hello_mysql4>
+                <class>Ajzele_SimpleModel_Model_Mysql4</class>
+                <entities>
+                    <hello>
+                        <table>ajzele_hello</table>
+                    </hello>
+                </entities>                
+            </hello_mysql4>
+            
+        </models>
+        
+        <resources>
+            <hello_setup>
+                <setup>
+                    <module>Ajzele_SimpleModel</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </hello_setup>
+            
+            <hello_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </hello_read>            
+            
+            <hello_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </hello_write>                
+		</resources>        
+        
+	</global>    
+</config>
