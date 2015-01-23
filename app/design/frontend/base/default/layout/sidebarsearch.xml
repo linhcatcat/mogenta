@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<!-- mini search in all left columns -->
+	<!--
+	<default>
+		<reference name="left">
+			<block type="sidebarsearch/advanced_sidebar" name="sidebarsearch_advanced_sidebar" template="sidebarsearch/advanced/sidebar.phtml" before="-"/>
+		</reference>
+	</default>
+	-->
+
+	<!-- mini search on Homepage; Homepage needs to have left column (2 col left) -->
+	<cms_index_index>
+		<update handle="sidebarsearch_calendar"/>
+		<reference name="left">
+			<block type="sidebarsearch/advanced_sidebar" name="sidebarsearch_advanced_sidebar" template="sidebarsearch/advanced/sidebar.phtml" before="-"/>
+		</reference>
+	</cms_index_index>
+	
+	<!-- Advanced search results -->
+	<catalogsearch_advanced_result>
+		<update handle="sidebarsearch_calendar"/>
+		<reference name="root">
+			<action method="setTemplate"><template>page/3columns.phtml</template></action>
+		</reference>
+		<reference name="left">
+			<block type="sidebarsearch/advanced_sidebar" name="sidebarsearch_advanced_sidebar" template="sidebarsearch/advanced/sidebar.phtml" before="-"/>
+		</reference>
+	</catalogsearch_advanced_result>
+	
+	<!-- calendar date picker handle; can be removed if you don't use Date attributes in search -->
+	<sidebarsearch_calendar>
+		<reference name="head">
+			<action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/><!--<if/><condition>can_load_calendar_js</condition>--></action>
+			<action method="addItem"><type>js</type><name>calendar/calendar.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+			<action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+		</reference>
+		<reference name="content">
+			<block type="core/html_calendar" name="html_calendar" as="html_calendar" template="page/js/calendar.phtml"/>
+		</reference>
+	</sidebarsearch_calendar>
+
+</layout>

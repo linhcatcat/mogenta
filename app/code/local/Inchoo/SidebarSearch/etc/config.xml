@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Inchoo_SidebarSearch>
+			<version>0.2.0</version>
+		</Inchoo_SidebarSearch>
+	</modules>
+	<global>
+		<blocks>
+			<sidebarsearch>
+				<class>Inchoo_SidebarSearch_Block</class>
+			</sidebarsearch>
+		</blocks>
+	</global>
+	<frontend>
+		<layout>
+			<updates>
+				<sidebarsearch>
+					<file>sidebarsearch.xml</file>
+				</sidebarsearch>
+			</updates>
+		</layout>
+	</frontend>
+</config>
