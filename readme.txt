@@ -39,3 +39,6 @@ http://inchoo.net/category/magento/page/5/
 {{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}
 <!– END OF CONTACT FORM –>
 {{block type="cms/block" block_id="footer_links1"}}
+
+http://inchoo.net/category/magento/page/31/
+http://inchoo.net/magento/navigate-by-merchantplus-in-magento/
