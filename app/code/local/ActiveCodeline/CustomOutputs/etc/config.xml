@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <ActiveCodeline_CustomOutputs>
+            <version>0.1.0</version>
+        </ActiveCodeline_CustomOutputs>
+    </modules>
+    
+    <frontend>
+        <routers>
+            <simplemailer>
+                <use>standard</use>
+                <args>
+                    <module>ActiveCodeline_CustomOutputs</module>
+                    <!-- 
+                    	Maps the controller to url like http://shop.local/custom-output
+                    	or http://shop.local/custom-output/index
+                    	or http://shop.local/index.php/custom-output
+                    	or http://shop.local/index.php/custom-output/index 
+                    -->
+                    <frontName>custom-output</frontName>
+                </args>
+            </simplemailer>
+        </routers>
+    </frontend>     
+</config>
